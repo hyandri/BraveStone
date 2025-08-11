@@ -1,0 +1,408 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  background-color: #fff;
+  line-height: 1.5;
+}
+/* ----------------------------------------------- */
+.nav-bar{
+  font-family: Urbanist;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar h1{
+    font-size: 28px;
+    color: #5fc1ae;  
+}
+.container {
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+section {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Product Overview Section */
+.product-overview {
+  background-color: #63a69f;
+  background-image: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 90px,
+      #74b4ac 90px,
+      #74b4ac 130px
+  );
+  /* background-color: #AFD8F1;
+  opacity: 0.9;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 90px,
+    #97cbea 90px,
+    #97cbea 130px
+); */
+  padding: 4rem 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.overview-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 170px;
+}
+
+.product-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 590px;
+  opacity: 1;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-info {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  margin-left: -60px; 
+  z-index: 1;
+  margin-bottom: 130px;
+}
+.brand-name {
+  display: flex;
+  align-items: center;
+}
+
+.brand-name h1 {
+  font-size: 5.625rem;
+  color: #4a4d4f;
+  /* color: #57b2a0; */
+  margin-right: 0.5rem;
+}
+
+.trademark {
+  width: 19px;
+  height: 9px;
+  align-self: flex-start;
+  margin-top: 1.5rem;
+}
+
+.deep-info{
+    margin-top: -30px
+}
+.product-tagline {
+  color: #4a4d4f;
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.certifications {
+  font-size: 0.875rem;
+}
+
+.footer-tagline {
+  font-size: 0.75rem;
+  margin-top: 2rem;
+}
+
+/* Product Features Section */
+.product-features {
+  text-align: center;
+  max-width: 828px;
+  margin: 0 auto;
+}
+
+.product-features h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.product-features p {
+  font-size: 1.125rem;
+}
+
+.product-name{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.product-name h1{
+   font-size: 40px;
+    color: #5fc1ae; 
+}
+/* Product Details Section */
+.product-details {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  padding-bottom: rem;
+}
+
+.details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.detail-icon {
+  width: 73px;
+  height: 73px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+.detail-item p {
+  font-weight: 600;
+  font-size: 0.8125rem;
+}
+
+/* Product Description Section */
+/* here need edition of paddinga fter image */
+.product-description {
+  padding: 2rem;
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.product-description .product-div{
+  max-width: 530px;
+}
+.product-description img{
+max-width: 670px;
+width: auto;
+height: auto;
+max-height: 450px;
+}
+.product-description h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.product-description p {
+  font-size: 0.875rem;
+}
+
+/* Product Comparison Section */
+.product-comparison {
+  max-width: 965px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.comparison-table {
+  margin-bottom: 2rem;
+}
+
+.comparison-table h2 {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+thead {
+  background-color: #5fc1ae;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  border: 1px solid #000;
+  font-size: 0.875rem;
+}
+
+th {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+td {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+/* scroll indicators */
+.carousel-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 20px;
+  justify-content: center;
+  
+}
+
+.carousel-box {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px;
+}
+
+.pen-carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.pen-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.pen-item {
+  padding: 15px;
+  background-color: #EDEDED;
+  flex: 0 0 calc(20% - (4rem / 5));
+  height: 250px;
+  border-radius:5px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  user-select: none;
+  flex-direction: column;
+}
+.pen-item img{
+  padding-bottom: 20px;
+    height: auto;
+    width: 80%;
+}
+.pen-item p{
+  font-size:medium;
+  font-weight: 400;
+  text-align: center;
+}
+.nav-button {
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.nav-button:hover {
+  background: #555;
+}
+.indicator {
+  margin-left: 150px;
+}
+
+.indicator h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 500;
+
+}
+/* footer */
+        .company-footer {
+            /* 
+             * Replicating the visual style from the image:
+             * - Base color: #63a69f (a muted teal)
+             * - Stripe color: #74b4ac (a slightly lighter teal)
+             */
+            background-color: #63a69f;
+            background-image: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 90px,
+                #74b4ac 90px,
+                #74b4ac 130px
+            );
+            color: #ffffff;
+            padding: 50px 30px;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            line-height: 1.7;
+        }
+
+        .footer-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px; /* Space between columns */
+        }
+
+        .footer-column {
+            flex: 1; /* Allows columns to grow and shrink evenly */
+            min-width: 280px; /* Prevents columns from getting too narrow */
+        }
+        
+        .footer-column h3 {
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: 700; /* Bolder for headings */
+        }
+
+        .footer-column p {
+            margin: 8px 0;
+        }
+
+        .footer-column a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-column a:hover {
+            opacity: 0.8; /* Subtle feedback on hover */
+        }
